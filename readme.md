@@ -4,3 +4,6 @@ In the future, this will be a place to see top time trial times, and then have l
 for those courses in time trial mode.
 
 It should be noted that this is in a very early stage of development.
+
+
+demo of it in action as of commit 6 https://www.youtube.com/watch?v=lQEuyNYP2v8
