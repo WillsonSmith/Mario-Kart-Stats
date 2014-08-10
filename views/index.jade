@@ -5,6 +5,8 @@ block content
   p Welcome to #{title}
 
   - for result in data
-    ul
-      li
-        a(href="https://www.youtube.com/watch?v=#{result.video_id}") #{result.poster.name}
+    - for item in result.video_posts
+      p #{item.course_name}
+      ul
+        li
+          a(href="https://www.youtube.com/watch?v=#{item.video_id}") #{item.poster.name}
