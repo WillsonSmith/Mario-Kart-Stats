@@ -55,8 +55,6 @@ var items = [];
 }*/
 /* GET home page. */
 router.get('/', function(req, res) {
-  count = 0;
-  items = [];
 
   /*for (var i in courseIds["Mushroom Cup"]) {
 
@@ -66,7 +64,7 @@ router.get('/', function(req, res) {
 
   //}
 
-  //res.render('index', { title: 'Express' });
+  res.render('index', { title: 'Express', races: courseIds });
 });
 
 module.exports = router;

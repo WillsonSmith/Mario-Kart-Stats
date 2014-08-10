@@ -1,0 +1,8 @@
+extends layout
+
+block content
+  div(class='group container')
+    -for video in videos
+      ul
+        li
+          a(href="//youtube.com/watch?v=#{video.video_id}") #{video.poster.name}
