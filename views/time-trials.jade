@@ -1,0 +1,11 @@
+extends layout
+
+block content
+  container(class='group')
+    h1 #{courseName}
+    -for rank in data
+      div.trial
+        div.icon
+          img(src=rank.icon_url)
+        div.name #{rank.name}
+        div.time Time: #{rank.time}

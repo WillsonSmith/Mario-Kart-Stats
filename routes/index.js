@@ -12,9 +12,7 @@ var count = 0;
 
 var items = [];
 
-console.log(courseIds["Mushroom Cup"]);
-
-function getForRace(id, name, res) {
+/*function getForRace(id, name, res) {
 
   var body = "",
       opts = {
@@ -23,48 +21,48 @@ function getForRace(id, name, res) {
         path: "/en_us/jsonapi/videos?course_id=" + id
 
       };
+      https.request(opts, function(results) {
+      //https.get("https://" + opts.host + opts.path, function handleResults(results) {
 
-      https.get("https://" + opts.host + opts.path, function handleResults(results) {
+        results.on('data', function addChunk(chunk) {
 
-      results.on('data', function addChunk(chunk) {
+          body += chunk;
 
-        body += chunk;
+        });
 
-      });
+        results.on('error', function(err) {
 
-      results.on('error', function(err) {
+          console.log(err);
 
-        console.log(err);
+        });
 
-      });
+        results.on('end', function returnResults() {
 
-      results.on('end', function returnResults() {
+          var data = JSON.parse(body);
+          items.push(data);
+          count++;
 
-        var data = JSON.parse(body);
-        items.push(data);
-        count++;
+          if (count === 4) {
 
-        if (count === 4) {
+            res.render('index', { title: 'Express', data: items });
 
-          res.render('index', { title: 'Express', data: items });
+          }
 
-        }
+        });
 
-      });
+    }).end();
 
-    });
-
-}
+}*/
 /* GET home page. */
 router.get('/', function(req, res) {
   count = 0;
   items = [];
 
-  for (var i in courseIds["Mushroom Cup"]) {
+  /*for (var i in courseIds["Mushroom Cup"]) {
 
     getForRace(courseIds["Mushroom Cup"][i], i, res);
 
-  }
+  }*/
 
   //}
 
