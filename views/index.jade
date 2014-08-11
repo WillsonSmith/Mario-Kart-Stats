@@ -1,16 +1,17 @@
 extends layout
 
 block content
-  div(class='container')
-    h1= title
-    p Welcome to #{title}
-
+  div(class='container group')
+    h1 Mario Kart 8 Time Trials
     -each val, key in races
-      p time trials for #{key}
+      section(class="cup")
+        h2 #{key}
         ul
           -each id, course in val
             li
               div
-                a(href='/time-trials/#{id}') #{course}
+                a(href='/time-trials/#{id}')
+                  span #{course}
               div
-                a(href='/videos/#{id}/2') Videos of Time Trials
+                a(href='/videos/#{id}/2')
+                  span - Videos of Time Trials
