@@ -172,3 +172,23 @@ ul li div:nth-child(even) span {
   width: 50%;
 
 }
+
+.video {
+
+  padding: 10px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.27);
+
+  margin: 10px 0;
+
+}
+
+.video img {
+
+  width: 100%;
+
+}
+.video section {
+
+  text-align: center;
+
+}

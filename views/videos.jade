@@ -2,8 +2,9 @@ extends layout
 
 block content
   div(class='group container')
+    h1 Videos for #{videos[0].course_name}
     -for video in videos
-      section(class='video')
+      div(class='video')
           a(href="//youtube.com/watch?v=#{video.video_id}")
             img(src="//img.youtube.com/vi/#{video.video_id}/0.jpg")
-            span #{video.poster.name}
+            section Posted by #{video.poster.name} #{video.upload_time}
