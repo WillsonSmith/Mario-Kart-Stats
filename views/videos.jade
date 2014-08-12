@@ -5,7 +5,7 @@ block content
     h1 Videos for #{videos[0].course_name}
     -for video in videos
       div(class='video')
-        section
+        section(class='subtleShadow')
           a(href="//youtube.com/watch?v=#{video.video_id}")
             img(src="//img.youtube.com/vi/#{video.video_id}/0.jpg")
             section Posted by #{video.poster.name} #{video.upload_time}

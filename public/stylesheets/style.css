@@ -156,6 +156,12 @@ ul li div:nth-child(even) span {
 
 }
 
+.stats {
+
+  background: #d1c4e9;
+
+}
+
 @media (min-width: 400px) {
 
   .trial {
@@ -167,6 +173,23 @@ ul li div:nth-child(even) span {
 
 }
 
+.trial {
+
+  padding: 10px;
+
+}
+
+.trial>section {
+
+  padding: 10px;
+
+}
+
+.icon {
+
+  background: #ede7f6;
+
+}
 .icon img {
 
   width: 50%;
@@ -190,9 +213,14 @@ ul li div:nth-child(even) span {
 
 }
 
-.video>section {
+.subtleShadow {
 
   box-shadow: 0 1px 4px rgba(0,0,0,0.27);
+
+}
+
+.video>section {
+
   padding: 10px;
 
 }

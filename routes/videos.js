@@ -47,7 +47,6 @@ module.exports = function(req, res) {
   getVideos(courseId, videoType, function() {
 
     var videos = arguments[0].video_posts;
-    console.log(videos);
 
     res.render('videos', { title: 'Express', videos: videos });
 

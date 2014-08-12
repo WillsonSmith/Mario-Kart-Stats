@@ -5,7 +5,9 @@ block content
     h1 #{courseName}
     -for rank in data
       div.trial
-        div.icon
-          img(src=rank.icon_url)
-        div.name #{rank.name}
-        div.time Time: #{rank.time}
+        section.subtleShadow
+          div.icon
+            img(src=rank.icon_url)
+          section.stats
+            div.name #{rank.name}
+            div.time Time: #{rank.time}
