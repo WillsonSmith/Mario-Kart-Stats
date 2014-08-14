@@ -2,7 +2,11 @@ extends layout
 
 block content
   div(class='group container')
-    h1 #{courseName}
+    nav
+      ul
+        li
+          a(href='/') Home
+    h1 Top times for #{courseName}
     -for rank in data
       div.trial
         section.subtleShadow
