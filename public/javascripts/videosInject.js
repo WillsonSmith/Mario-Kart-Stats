@@ -21,7 +21,7 @@
     vid.src = videoString + vidId;
 
     inject.removeChild(img);
-    //img.style.opacity = '0'; img.style.['pointer-events'] = 'none';
+    //img.style.opacity = '0'; img.style['pointer-events'] = 'none';
     img.style.position = 'absolute';
 
     inject.appendChild(vid);
