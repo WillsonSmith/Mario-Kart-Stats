@@ -225,6 +225,12 @@ ul li div:nth-child(even) span {
 
 }
 
+.videoInject {
+
+  position: relative;
+
+}
+
 .video>section {
 
   padding: 10px;
