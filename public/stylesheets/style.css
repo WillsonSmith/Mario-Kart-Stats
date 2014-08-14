@@ -26,6 +26,12 @@ body {
   font-family: "Open Sans", sans-serif;
 }
 
+iframe {
+
+  max-width: 100%;
+
+}
+
 a {
   color: #6200ea;
   text-decoration: none;
@@ -230,6 +236,7 @@ ul li div:nth-child(even) span {
   width: 100%;
 
 }
+
 .video section {
 
   text-align: center;

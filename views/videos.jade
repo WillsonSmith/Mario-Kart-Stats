@@ -6,6 +6,9 @@ block content
     -for video in videos
       div(class='video')
         section(class='subtleShadow')
-          a(href="//youtube.com/watch?v=#{video.video_id}")
-            img(src="//img.youtube.com/vi/#{video.video_id}/0.jpg")
+          a(href="//youtube.com/watch?v=#{video.video_id}" data-id=video.video_id)
+            span(class='videoInject')
+              img(src="//img.youtube.com/vi/#{video.video_id}/0.jpg")
             section Posted by #{video.poster.name} #{video.upload_time}
+
+  script(src='/javascripts/videosInject.js' type='text/javascript')
